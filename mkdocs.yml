@@ -1,0 +1,24 @@
+site_name: Donovan's Blog
+site_url: https://blog.gamma.net.nz
+site_description: Thoughts on software engineering, Linux, and building with AI
+site_author: Donovan Jones
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+nav:
+  - Home: blog/index.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - admonition
+  - attr_list
+  - md_in_html
