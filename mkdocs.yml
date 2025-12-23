@@ -3,6 +3,8 @@ site_url: https://blog.gamma.net.nz
 site_description: Thoughts on software engineering, Linux, and building with AI
 site_author: Donovan Jones
 
+docs_dir: docs/blog
+
 theme:
   name: material
   palette:
@@ -13,7 +15,7 @@ theme:
     - content.code.copy
 
 nav:
-  - Home: blog/index.md
+  - Home: index.md
 
 markdown_extensions:
   - pymdownx.highlight
