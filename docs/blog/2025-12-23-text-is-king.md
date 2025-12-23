@@ -2,7 +2,7 @@
 
 *December 23, 2025*
 
-So I was watching [Steve Yegge's talk](https://www.youtube.com/watch?v=grn8vsFYuP0) the other day, and he drops this line: "text is king." And I'm sitting there thinking, yeah, *obviously*. But then I started connecting the dots, and holy crap, this isn't just some throwaway observation. It's the entire history of computing in three words.
+So I was watching [an interview with Steve Yegge](https://www.youtube.com/watch?v=grn8vsFYuP0) the other day, and he drops this line: "text is king." And I'm sitting there thinking, yeah, *obviously*. But then I started connecting the dots, and holy crap, this isn't just some throwaway observation. It's the entire history of computing in three words.
 
 Let me back up.
 
@@ -34,7 +34,7 @@ Compare that to Flash. Slick, fancy, multimedia-rich, and completely opaque. You
 
 Dead. Killed by HTML5. Killed by text.
 
-People say Flash died because of mobile, because Steve Jobs refused to support it. But that's not the whole story. Flash died because it was an **impenetrable binary blob** in a world that was standardizing on inspectable text. Even WebAssembly, which is literally compiled binary code running in browsers, ships with WAT - a text format specifically for human inspection.
+People say Flash died because of mobile, because Steve Jobs refused to support it. But that's not the whole story. Flash died because it was an **impenetrable binary blob** in a world that was standardizing on inspectable text.
 
 Text won the internet. Every major protocol, every open standard, every piece of infrastructure that matters - text. Because when things break at 3 AM, you need to be able to read what's happening. You need to grep logs, inspect packets, trace requests. Good luck doing that with proprietary binary protocols.
 
@@ -204,7 +204,7 @@ And I haven't even mentioned:
 
 **CSV** - the worst data format except for all the others. Survives because it's text. Grep-able, awk-able, human-readable. Excel's binary formats are "better" but harder to work with programmatically. And when you need to debug data import issues, you can open the CSV in a text editor and *see what's wrong*.
 
-I could go on. LaTeX in academia. Configuration language wars (HCL, Jsonnet, CUE - all "better text" not "let's use binary"). RSS/Atom. SVG. DNS zone files. Prometheus metrics. The list is endless.
+I could go on. LaTeX in academia. RSS/Atom. SVG. DNS zone files. Prometheus metrics. The list is endless.
 
 Every single one follows the same pattern: text enables universal tooling, universal tooling creates network effects, developers choose tools they can inspect and automate, binary alternatives get marginalized even when "technically better."
 
