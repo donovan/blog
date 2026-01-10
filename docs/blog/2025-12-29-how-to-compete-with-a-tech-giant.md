@@ -80,13 +80,16 @@ The community also serves as a talent pipeline. When a community contributor dem
 
 The modular nature of open source software gives Valve strategic flexibility that proprietary development cannot match. For any component they need, Valve faces three options:
 
-**Option 1: Contribute to existing project**
+### Option 1: Contribute to existing project
+
 Wine (the Windows API compatibility layer) has existed since 1993. It's mature, battle-tested, and handles the incredibly complex task of translating Windows system calls to POSIX equivalents. Valve doesn't need to rebuild this. Instead, Proton (Valve's Windows compatibility layer) is built on top of Wine. Valve contributes improvements upstream, benefits from Wine's ongoing community development, and focuses their resources on gaming-specific enhancements. Here we see the archetypes and strategic options working together: Valve contracts with CodeWeavers (Archetype 3: consultancy) to contribute to Wine (Option 1: existing project).
 
-**Option 2: Fork an existing project**
+### Option 2: Fork an existing project
+
 VKD3D is Wine's DirectX 12 to Vulkan translation layer. It's designed for compatibility and correctness across all Wine use cases. Valve needs DirectX 12 translation optimized specifically for gaming workloads. So they forked it to create VKD3D-Proton, adding gaming-specific optimizations that upstream Wine wouldn't accept or prioritize. They still leverage the existing codebase - they didn't start from scratch - but can diverge where their requirements differ.
 
-**Option 3: Start a new project**
+### Option 3: Start a new project
+
 When Valve needed x86/x64 to ARM translation for gaming (for devices like the ARM-based Steam Frame), nothing adequate existed. So they commissioned FEX-Emu, a new project purpose-built for this requirement. Similarly, existing Linux compositors (like GNOME's Mutter or KDE's KWin) are designed for general desktop use. Valve needed gaming-specific features: frame limiting, HDR support, seamless switching between games, and tight integration with Steam. So they created Gamescope, a compositor optimized for gaming workloads.
 
 The strategic flexibility is profound. For each component, Valve can evaluate:
